@@ -216,6 +216,6 @@ let x: 'hello' = 'hello';
 x = 'hello';
 ```
 
-> [!WARNING]
+> [!CAUTION]
 > x = "world";  
-> Type '"howdy"' is not assignable to type '"hello"'.
+> Type '"world"' is not assignable to type '"hello"'.
