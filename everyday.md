@@ -197,3 +197,25 @@ window.ts.transpileModule(src, {});</code></pre>
 
 </tbody>
 </table>
+
+### Type Assertions
+
+Sometimes you will have information about the type of a value that TypeScript can’t know about.
+
+```typescript
+const myCanvas = document.getElementById('main_canvas') as HTMLCanvasElement;
+```
+
+### Literal Types
+
+In addition to the general types string and number, we can refer to specific strings and numbers in type positions.
+
+```typescript
+let x: 'hello' = 'hello';
+// OK
+x = 'hello';
+```
+
+> [!WARNING]
+> x = "world";  
+> Type '"howdy"' is not assignable to type '"hello"'.
